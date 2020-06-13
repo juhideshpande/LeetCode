@@ -10,8 +10,7 @@ class Solution(object):
             if not stack or stack[-1]!=S[i]:
                 stack.append(S[i])
             else:    
-                while stack and stack[-1]==S[i]:
-                    stack.pop()
+                stack.pop()
                
             
                 
