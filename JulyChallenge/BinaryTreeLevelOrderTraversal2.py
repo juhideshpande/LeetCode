@@ -32,5 +32,5 @@ class Solution(object):
                     
             nodes.append(l) 
             
-        return nodes[::-1]    
+        return nodes[::-1]     
         
