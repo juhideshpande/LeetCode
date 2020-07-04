@@ -5,14 +5,8 @@ class Solution(object):
         :type start: int
         :rtype: int
         """
-        ans=[]
         xor=0
-        for i in range(n):
-            temp=start+2*i
-            ans.append(temp)
-        #print(ans)    
-        
-        for i in range(len(ans)):
-            xor = xor ^ ans[i]
+        for i in range(0,n):
+            xor = xor ^ (start+2*i)            
         return xor    
             
