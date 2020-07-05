@@ -11,7 +11,7 @@ class Solution(object):
         for src, dest in sorted(tickets, reverse=True):
             itinerary[src].append(dest)
        
-        #print(itinerary)
+        
         while stack:
             while itinerary[stack[-1]]:
                 t_dest = itinerary[stack[-1]].pop()
