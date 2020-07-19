@@ -1,13 +1,13 @@
 import collections
 class Solution:
-  def killProcess(self,pid,ppid,kill):
+  def killProcess(self, pid, ppid, kill):
         """
         :type pid: List[int]
         :type ppid: List[int]
-        :typekill: int
+        :type kill: int
         :rtype: List[int]       
         """
-        result=[]
+        result=[]                          #<---BFS + Dictionary
         tree=collections.defaultdict(list)
         queue=collections.deque()
         
