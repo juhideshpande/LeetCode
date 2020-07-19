@@ -1,12 +1,12 @@
 import collections
 class Solution:
   def killProcess(self,pid,ppid,kill):
-        """"
-        pid=List(int)
-        ppid=List(int)
-        kill=int
-        rtype=List(int)        
-        """"
+        """
+        :type pid: List[int]
+        :type ppid: List[int]
+        :typekill: int
+        :rtype: List[int]       
+        """
         result=[]
         tree=collections.defaultdict(list)
         queue=collections.deque()
