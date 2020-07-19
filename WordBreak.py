@@ -15,7 +15,7 @@ class Solution(object):
                 print(j,dp[j])
                 if dp[j] and s[j:i] in wordDict:
                     dp[i]=True
-        print("count",count)            
+        #print("count",count)            
         return dp[-1]            
          
             
