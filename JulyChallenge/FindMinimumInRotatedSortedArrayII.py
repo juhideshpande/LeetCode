@@ -11,11 +11,10 @@ class Solution(object):
             mid=low+(high-low)//2
             #print(mid)
             if nums[mid]>nums[high]:
-                print("in if")
+                #print("in if")
                 low=mid+1
                 
-            elif nums[mid]==nums[high] and nums[low]==nums[high]:
-                
+            elif nums[mid]==nums[high] and nums[low]==nums[high]:                
                 if nums[mid]>nums[mid+1] or nums[high-1]<nums[mid]:
                     low=mid+1
                 else:
@@ -23,5 +22,5 @@ class Solution(object):
                     
             else:
                 high=mid
-                print("in else")
+               # print("in else")
         return nums[low]        
