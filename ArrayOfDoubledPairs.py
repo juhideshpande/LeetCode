@@ -16,7 +16,7 @@ class Solution(object):
 
         count = collections.Counter(A)
         for x in sorted(A, key = abs):
-            if count[x] == 0: 
+            if count[x] == 0:  
                 continue
             if count[2*x] == 0: 
                 return False
