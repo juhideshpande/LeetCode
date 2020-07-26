@@ -15,3 +15,4 @@ class Solution(object):
             
                 
         return "".join(stack)
+ 
