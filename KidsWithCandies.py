@@ -12,3 +12,4 @@ class Solution(object):
             else:
                 answer.append(True)
         return answer
+ 
