@@ -12,3 +12,4 @@ class Solution(object):
                 if length[i] not in nums:
                     return length[i]
                 
+ 
