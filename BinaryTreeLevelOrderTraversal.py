@@ -29,7 +29,7 @@ class Solution(object):
                     
                 if curr.right:
                     queue.append(curr.right)
-                    
+                     
             nodes.append(l) 
             
         return nodes    
