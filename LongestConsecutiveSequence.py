@@ -23,4 +23,4 @@ class Solution(object):
                     
                     print(result,length)
                     length=0
-            return result+1
+            return result+1 
