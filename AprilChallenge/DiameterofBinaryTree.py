@@ -10,4 +10,13 @@ class Solution(object):
         :type root: TreeNode
         :rtype: int
         """
+        self.d = 0
+        def dfs(node):
+            if not node:
+                return 0
+            l, r = dfs(node.left), dfs(node.right)
+            self.d = max(l + r, self.d)
+            return 1 + max(l, r)
+        dfs(root)
+        return self.d
         
