@@ -1,24 +1,17 @@
-# Definition for an interval.
-# class Interval(object):
-#     def __init__(self, s=0, e=0):
-#         self.start = s
-#         self.end = e
-
-
 class Solution(object):
     def minMeetingRooms(self, intervals):
         """
-        :type intervals: List[Interval]
+        :type intervals: List[List[int]]
         :rtype: int
         """
-        intervals.sort(key = lambda x: x.start)
+        intervals.sort(key = lambda x: x[0])
         heap = []
         for interval in intervals:
-            if heap and interval.start >= heap[0]:
+            if heap and interval[0] >= heap[0]:
                 # room is already used in last meeting and continue to use the same room for this meeting
-                heapq.heapreplace(heap, interval.end)
+                heapq.heapreplace(heap, interval[1])
                 
             else:
-                heapq.heappush(heap, interval.end)  #create new room
+                heapq.heappush(heap, interval[1])  #create new room
                 
-        return len(heap)        
+        return len(heap) 
