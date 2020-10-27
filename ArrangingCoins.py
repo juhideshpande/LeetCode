@@ -4,8 +4,7 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
-        i=1
-        
+        i=1        
         while n>=0:
             n-=i
             i+=1
