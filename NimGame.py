@@ -6,3 +6,4 @@ class Solution(object):
         """
         return (n%4!=0)
         #Time and Space Complexity = O(1)
+ 
